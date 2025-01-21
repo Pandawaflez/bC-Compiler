@@ -1,0 +1,75 @@
+#DRBC w01.bC
+//#DRBC Shows how to do simple I/O in bC
+//#DRBC Compile:
+//#DRBC    /y/shared/Engineering/cs-drbc/cs445/bC io.bC > io.tm
+//#DRBC    Delete the last 2 lines.
+//#DRBC Run:
+//#DRBCRUN    /y/shared/Engineering/cs-drbc/cs445/tmbc io.tm
+//#DRBCRUN    g
+//#DRBCRUN    2
+//#DRBCRUN    q
+
+int monsterHealth:100;
+int playerHealth:100;
+
+printText( char str[]; int length ) {
+   for i = 0 to length do {
+      outputc( str[i] );
+   }
+}
+
+main() {
+   //declarations:
+   int x;
+   x = 1;
+
+   //code:
+   
+   while x != 2 do {
+      // removed code:
+      //outputc('D');outputc('o');outputc(' ');outputc('y');outputc('o');outputc('u');outputc(' ');outputc('w');outputc('a');outputc('n');outputc('t');
+      //outnl();
+      //outputc(' ');outputc(' ');outputc('1');outputc('.');outputc(' ');outputc('C');outputc('o');outputc('n');outputc('t');outputc('i');outputc('n');outputc('u');outputc('e');
+      //outnl();
+      //outputc(' ');outputc(' ');outputc('2');outputc('.');outputc(' ');outputc('S');outputc('t');outputc('o');outputc('p');
+      //outnl();
+      
+      printText("What do you want to do?" , 23);
+      outnl();
+      printText("1) Attack" , 9 );
+      outnl();
+      printText("2) Block" , 8 );
+      outnl();
+      x = input();
+      takeTurn(x);
+   }
+}
+
+takeTurn( int x ){
+   int playerDamage;
+   int monsterDamage = 5 + ?10;
+   if ( x == 1 ){
+      printText("You Attack" , 10 );
+      outnl();
+      playerDamage = 5 + ?10;
+      monsterHealth -= playerDamage;
+   }
+   
+   if ( x == 2 ){
+      printText("You Block" , 9 );
+      outnl();
+   }
+   
+}
+
+/*
+main(){
+   int x;
+   x = l;
+   
+   while x != 2 do {
+      
+   }
+   
+}
+*/

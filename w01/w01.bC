@@ -1,0 +1,201 @@
+#DRBC w01.bC
+#DRBC H 1
+
+int monsterHealth:100;
+int playerHealth:100;
+int h, j, k;
+char monsterChar:'G';
+char playerChar:'H';
+bool isTrue:true; 
+
+printText( char str[]; int length ) {
+   for i = 0 to length do {
+      outputc( str[i] );
+   }
+}
+
+int gameFunctionA( int g, h; int t[] ){
+   
+   if ( g != 1 ) then {
+      if ( t[0] != 0 ) then {
+         outputc('g');
+      } else {
+         outputc('o');
+         g++;
+         h++;
+      }
+   } else outputc('o');
+   
+   if ( 9 == 9 and 1== 1) then {
+      return 1;
+   } else {
+      if (9==9 and 10==10) then {
+         return 1;
+      }
+   }
+   while g < 10 do if false then g++;
+   else if false then g++;
+   g--;
+   for y = 0 to 10 by 2 do if 1==y then break;
+   return (g + t[0]);
+}
+
+printStatus(){
+   outnl();
+   printText( "--------------------" , 20 );
+   outnl();
+   outputc( playerChar );
+   outputc( ' ' );
+   outputc( 'v' );
+   outputc( 's' );
+   outputc( ' ' );
+   outnl();
+   outputc( monsterChar );
+   printText( "Player Health: " , 15 );
+   output(playerHealth);
+   outnl();
+   printText( "Monster Health: " , 16 );
+   output(monsterHealth);
+   outnl();
+   printText( "--------------------" , 20 );
+   outnl();
+   //if ( 1 == 0 ) then h = gameFunctionA( 1 ; 2 ; [] );
+}
+
+takeTurn( int x ){
+   static int baseDamage:2;
+   int playerDamage;
+   int monsterDamage;
+   bool sanityCheck;
+
+   baseDamage++;
+   monsterDamage = baseDamage + ?10;
+   
+   if ( isTrue ) then {
+      sanityCheck = true;
+   } else {
+      sanityCheck = false;
+   };
+   
+   //player moves:
+   if ( x == 1 ) then {
+      int t;
+      t = 3 :>: 5;
+      t = t - t;
+      printText("You Attack!" , 11 );
+      outnl();
+      playerDamage = baseDamage + ?10;
+      monsterHealth -= playerDamage;
+   }
+   if ( x == 2 ) then {
+      int t;
+      t = 3 :<: 5;
+      printText("You Block!" , 10 );
+      outnl();
+      monsterDamage /= 2;
+      printText("Monster's Damage was halved!" , 28 );
+      outnl();
+   }
+   
+   printText("Enemy Attacks!" , 14 );
+   playerHealth -= monsterDamage;
+}
+
+int checkTime ( int numOfTurns ) {
+   if ( numOfTurns <= 5 and (numOfTurns % 2 == 0) or ( numOfTurns >= 0 ) ) then {
+      int ulessVal;
+      ulessVal = 0;
+      ulessVal += 1;
+      ulessVal *= numOfTurns;
+      if ( ulessVal == 10021325 ) then {
+         printText("Iime is rumming our!" , 20 );
+         outnl();
+      }
+      return 1;
+   } else if ( numOfTurns <= 10 ) then {
+      printText("Time is running out!" , 20 );
+      outnl();
+      return 1;
+   } else {
+      printText("Time ran out!" , 13 );
+      outnl();
+   }
+   return 0;
+}
+
+main() {
+   //declarations:
+   int x;
+   int numOfTurns;
+   x = 1;
+   numOfTurns = 0;
+
+   //code:
+   
+   while x != 2 do {
+      // removed code:
+      //outputc('D');outputc('o');outputc(' ');outputc('y');outputc('o');outputc('u');outputc(' ');outputc('w');outputc('a');outputc('n');outputc('t');
+      //outnl();
+      //outputc(' ');outputc(' ');outputc('1');outputc('.');outputc(' ');outputc('C');outputc('o');outputc('n');outputc('t');outputc('i');outputc('n');outputc('u');outputc('e');
+      //outnl();
+      //outputc(' ');outputc(' ');outputc('2');outputc('.');outputc(' ');outputc('S');outputc('t');outputc('o');outputc('p');
+      //outnl();
+      
+      int timeCheck;
+      int ghjrk:0;;
+      
+      while ghjrk < 10 do ghjrk++;
+      
+      // print statues:
+      printStatus();
+      // Get player input:
+      printText("What do you want to do?" , 23);
+      outnl();
+      printText("1) Attack" , 9 );
+      outnl();
+      printText("2) Block" , 8 );
+      outnl();
+      x = input();
+      // take turn:
+      takeTurn(x);
+      // have we died?:
+      if ( 0 >= playerHealth or monsterHealth < 1 ) then {
+         int u;
+         u = x;
+         u = u*u;
+         u = u/u;
+         u = 2;
+         x = u;
+      } else k = 10;
+      // has time run out?:
+      numOfTurns++;
+      timeCheck = checkTime( numOfTurns );
+      if ( timeCheck == 0 ) then {
+         // ummm... this is important to game function, I swear!:
+         int u:8;
+         int arr[7];
+         arr[0] = 10;
+         u = -u;
+         u = u + -u;
+         if ( not u > 0 ) then {
+            u = *arr;
+         }
+         h++;
+         j++;
+         playerHealth *= 0; // kill player
+         break;
+      }
+      //continue
+   }
+   
+   if ( playerHealth < 0 ) then {
+      printText("You Win!" , 8 );
+      outnl();
+   } else {
+      printText("You Died!" , 9 );
+      outnl();
+   }
+   
+   return;
+   
+}

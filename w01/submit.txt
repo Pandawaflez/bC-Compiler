@@ -1,0 +1,2894 @@
+Welcome gust1185
+Attempting to submit your code directory
+/y/shared/Engineering/cs-drbc/cs445/bC_1 w01.bC 
+#DRBC w01.bC
+3           | PRECOMPILER
+#DRBC H 1
+2 precomList: precomList PRECOMPILER
+26 typeSpec: INT
+22 varDeclId: ID
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+6         | decl
+26 typeSpec: INT
+22 varDeclId: ID
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+5 declList: declList decl
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+15 varDeclList: varDeclList ',' varDeclInit
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+15 varDeclList: varDeclList ',' varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+5 declList: declList decl
+28         | CHAR
+22 varDeclId: ID
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+5 declList: declList decl
+28         | CHAR
+22 varDeclId: ID
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+5 declList: declList decl
+27         | BOOL
+22 varDeclId: ID
+158         | BOOLCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+10 varDecl: typeSpec varDeclList ';'
+7 decl: varDecl
+5 declList: declList decl
+28         | CHAR
+48       | ID '[' ']'
+45           | parmId
+41 parmTypeList: typeSpec parmIdList
+38         | parmTypeList
+26 typeSpec: INT
+47 parmId: ID
+45           | parmId
+41 parmTypeList: typeSpec parmIdList
+37 parmList: parmList ';' parmTypeList
+35 parms: parmList
+81           | %empty
+83         | %empty
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+65 iterRange: simpleExp TO simpleExp
+81           | %empty
+83         | %empty
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+143        | ID '[' exp ']'
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+53        | FOR ID '=' iterRange DO matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+30        | ID '(' parms ')' stmt
+8     | funDecl
+5 declList: declList decl
+36      | %empty
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+156         | CHARCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+30        | ID '(' parms ')' stmt
+8     | funDecl
+5 declList: declList decl
+26 typeSpec: INT
+47 parmId: ID
+45           | parmId
+41 parmTypeList: typeSpec parmIdList
+38         | parmTypeList
+35 parms: parmList
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+13 scopedVarDecl: STATIC typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+27         | BOOL
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+89    | mutable INC
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+126 sumop: '+'
+139        | '?'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+134 unaryExp: unaryop unaryExp
+130       | unaryExp
+123 sumExp: sumExp sumop mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+158         | BOOLCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+81           | %empty
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+158         | BOOLCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+51 matched: IF simpleExp THEN matched ELSE matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+78        | ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+117      | EQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+121 minmaxop: MAX
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+119 minmaxExp: minmaxExp minmaxop sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+127      | '-'
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+123 sumExp: sumExp sumop mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+126 sumop: '+'
+139        | '?'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+134 unaryExp: unaryop unaryExp
+130       | unaryExp
+123 sumExp: sumExp sumop mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+98         | SUBASS
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+70 unmatched: IF simpleExp THEN stmt
+50     | unmatched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+117      | EQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+122         | MIN
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+119 minmaxExp: minmaxExp minmaxop sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+100         | DIVASS
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+70 unmatched: IF simpleExp THEN stmt
+50     | unmatched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+98         | SUBASS
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+30        | ID '(' parms ')' stmt
+8     | funDecl
+5 declList: declList decl
+26 typeSpec: INT
+26 typeSpec: INT
+47 parmId: ID
+45           | parmId
+41 parmTypeList: typeSpec parmIdList
+38         | parmTypeList
+35 parms: parmList
+81           | %empty
+83         | %empty
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+113 relop: LEQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+133      | '%'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+128 mulExp: mulExp mulop unaryExp
+124       | mulExp
+120          | sumExp
+117      | EQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+104 andExp: andExp AND unaryRelExp
+102          | andExp
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+116      | GEQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+101 simpleExp: simpleExp OR andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+97         | ADDASS
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+99         | MULASS
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+117      | EQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+70 unmatched: IF simpleExp THEN stmt
+50     | unmatched
+82 stmtList: stmtList stmt
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+85           | RETURN exp ';'
+63        | returnStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+113 relop: LEQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+85           | RETURN exp ';'
+63        | returnStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+51 matched: IF simpleExp THEN matched ELSE matched
+51 matched: IF simpleExp THEN matched ELSE matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+85           | RETURN exp ';'
+63        | returnStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+29 funDecl: typeSpec ID '(' parms ')' stmt
+8     | funDecl
+5 declList: declList decl
+36      | %empty
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+118      | NEQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+26 typeSpec: INT
+22 varDeclId: ID
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+78        | ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+114      | '<'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+142 mutable: ID
+89    | mutable INC
+76 expStmt: exp ';'
+61        | expStmt
+52        | WHILE simpleExp DO matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+116      | GEQ
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+114      | '<'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+101 simpleExp: simpleExp OR andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+131 mulop: '*'
+142 mutable: ID
+141       | mutable
+135         | factor
+128 mulExp: mulExp mulop unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+132      | '/'
+142 mutable: ID
+141       | mutable
+135         | factor
+128 mulExp: mulExp mulop unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+142 mutable: ID
+96 assignop: '='
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+51 matched: IF simpleExp THEN matched ELSE matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+89    | mutable INC
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+117      | EQ
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+26 typeSpec: INT
+22 varDeclId: ID
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+20            | varDeclId ':' simpleExp
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+26 typeSpec: INT
+23          | ID '[' NUMCONST ']'
+19 varDeclInit: varDeclId
+17            | varDeclInit
+14              | typeSpec varDeclList ';'
+80 localDecls: localDecls scopedVarDecl
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+137 unaryop: '-'
+142 mutable: ID
+141       | mutable
+135         | factor
+134 unaryExp: unaryop unaryExp
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+96 assignop: '='
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+126 sumop: '+'
+137 unaryop: '-'
+142 mutable: ID
+141       | mutable
+135         | factor
+134 unaryExp: unaryop unaryExp
+130       | unaryExp
+123 sumExp: sumExp sumop mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+115      | '>'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+107 unaryRelExp: NOT unaryRelExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+83         | %empty
+142 mutable: ID
+96 assignop: '='
+138        | '*'
+142 mutable: ID
+141       | mutable
+135         | factor
+134 unaryExp: unaryop unaryExp
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+70 unmatched: IF simpleExp THEN stmt
+50     | unmatched
+82 stmtList: stmtList stmt
+142 mutable: ID
+89    | mutable INC
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+89    | mutable INC
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+99         | MULASS
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+88 exp: mutable assignop exp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+87 breakStmt: BREAK ';'
+64        | breakStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+70 unmatched: IF simpleExp THEN stmt
+50     | unmatched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+52        | WHILE simpleExp DO matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+142 mutable: ID
+141       | mutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+114      | '<'
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+110 relExp: minmaxExp relop minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+144 immutable: '(' exp ')'
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+81           | %empty
+83         | %empty
+157         | STRINGCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+153        | exp
+155 constant: NUMCONST
+146          | constant
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+152 argList: argList ',' exp
+150 args: argList
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+151     | %empty
+148 call: ID '(' args ')'
+145          | call
+140 factor: immutable
+135         | factor
+130       | unaryExp
+124       | mulExp
+120          | sumExp
+111       | minmaxExp
+108            | relExp
+105       | unaryRelExp
+102          | andExp
+91    | simpleExp
+76 expStmt: exp ';'
+61        | expStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+51 matched: IF simpleExp THEN matched ELSE matched
+49 stmt: matched
+82 stmtList: stmtList stmt
+84 returnStmt: RETURN ';'
+63        | returnStmt
+49 stmt: matched
+82 stmtList: stmtList stmt
+79 compoundStmt: '{' localDecls stmtList '}'
+62        | compoundStmt
+49 stmt: matched
+30        | ID '(' parms ')' stmt
+8     | funDecl
+5 declList: declList decl
+1 program: precomList declList
+Found:
+  0 $accept: program $end
+  1 program: precomList declList
+  2 precomList: precomList PRECOMPILER
+  3           | PRECOMPILER
+  4           | %empty
+  5 declList: declList decl
+  6         | decl
+  7 decl: varDecl
+  8     | funDecl
+  10 varDecl: typeSpec varDeclList ';'
+  13 scopedVarDecl: STATIC typeSpec varDeclList ';'
+  14              | typeSpec varDeclList ';'
+  15 varDeclList: varDeclList ',' varDeclInit
+  17            | varDeclInit
+  19 varDeclInit: varDeclId
+  20            | varDeclId ':' simpleExp
+  22 varDeclId: ID
+  23          | ID '[' NUMCONST ']'
+  26 typeSpec: INT
+  27         | BOOL
+  28         | CHAR
+  29 funDecl: typeSpec ID '(' parms ')' stmt
+  30        | ID '(' parms ')' stmt
+  35 parms: parmList
+  36      | %empty
+  37 parmList: parmList ';' parmTypeList
+  38         | parmTypeList
+  41 parmTypeList: typeSpec parmIdList
+  45           | parmId
+  47 parmId: ID
+  48       | ID '[' ']'
+  49 stmt: matched
+  50     | unmatched
+  51 matched: IF simpleExp THEN matched ELSE matched
+  52        | WHILE simpleExp DO matched
+  53        | FOR ID '=' iterRange DO matched
+  61        | expStmt
+  62        | compoundStmt
+  63        | returnStmt
+  64        | breakStmt
+  65 iterRange: simpleExp TO simpleExp
+  70 unmatched: IF simpleExp THEN stmt
+  76 expStmt: exp ';'
+  78        | ';'
+  79 compoundStmt: '{' localDecls stmtList '}'
+  80 localDecls: localDecls scopedVarDecl
+  81           | %empty
+  82 stmtList: stmtList stmt
+  83         | %empty
+  84 returnStmt: RETURN ';'
+  85           | RETURN exp ';'
+  87 breakStmt: BREAK ';'
+  88 exp: mutable assignop exp
+  89    | mutable INC
+  91    | simpleExp
+  96 assignop: '='
+  97         | ADDASS
+  98         | SUBASS
+  99         | MULASS
+  100         | DIVASS
+  101 simpleExp: simpleExp OR andExp
+  102          | andExp
+  104 andExp: andExp AND unaryRelExp
+  105       | unaryRelExp
+  107 unaryRelExp: NOT unaryRelExp
+  108            | relExp
+  110 relExp: minmaxExp relop minmaxExp
+  111       | minmaxExp
+  113 relop: LEQ
+  114      | '<'
+  115      | '>'
+  116      | GEQ
+  117      | EQ
+  118      | NEQ
+  119 minmaxExp: minmaxExp minmaxop sumExp
+  120          | sumExp
+  121 minmaxop: MAX
+  122         | MIN
+  123 sumExp: sumExp sumop mulExp
+  124       | mulExp
+  126 sumop: '+'
+  127      | '-'
+  128 mulExp: mulExp mulop unaryExp
+  130       | unaryExp
+  131 mulop: '*'
+  132      | '/'
+  133      | '%'
+  134 unaryExp: unaryop unaryExp
+  135         | factor
+  137 unaryop: '-'
+  138        | '*'
+  139        | '?'
+  140 factor: immutable
+  141       | mutable
+  142 mutable: ID
+  143        | ID '[' exp ']'
+  144 immutable: '(' exp ')'
+  145          | call
+  146          | constant
+  148 call: ID '(' args ')'
+  150 args: argList
+  151     | %empty
+  152 argList: argList ',' exp
+  153        | exp
+  155 constant: NUMCONST
+  156         | CHARCONST
+  157         | STRINGCONST
+107 Found
+
+Missing:
+  43 parmIdList: parmIdList ',' parmId
+  66          | simpleExp TO simpleExp BY simpleExp
+  71          | IF simpleExp THEN matched ELSE unmatched
+  72          | WHILE simpleExp DO unmatched
+  73          | FOR ID '=' iterRange DO unmatched
+  90    | mutable DEC
+107 Found. 6 Missing. 45 Skipped(OK). 0 Errors (Needs fixing).
+That gives you 94%
+94
+Saving: w01_gust1185_042_787108082.bC
+cp w01.bC w01_gust1185_042_787108082.bC
+
+Your current directory is /home/gust1185/445/w01, 
+Enter file name to check in: Course to check file in for (e.g., cs150): rm w01_gust1185_042_787108082.bC
+That gives you 42 marks.
+You can get 3 more marks through this process.
+*** Submission successful! ***

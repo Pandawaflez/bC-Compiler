@@ -1,0 +1,73 @@
+#DRBC w01.bC
+#DRBC H 1
+
+char monsterLetter , playerLetter;
+int monsterHealth = 100;
+int playerHealth = 100;
+int arr[];
+int arr2[2];
+bool lost;
+
+main(){
+   static int BASE_DAMAGE = 5;;
+   int x;
+   int y, z;
+   int w = 100;
+   x = 10;
+   y = 100;
+   z = 100;
+   arr = [ 10, 11, 12 ];
+   
+   x = y + z;
+   z++;
+   y = x - y;
+   x = x * y;
+   y = x / z;
+   
+   y+=y;
+   y-=y;
+   y*=y;
+   y/=y;
+   
+   for i 0 to 10 do y++;
+   
+   y = y % 5;
+   
+   arr[0] = 10;
+   
+   if not y== 10 then y = 10;
+   if y == 10 then y = 11;
+   if y != 15 then y = 15;
+   if y >= 15 then y = 15;
+   if y <= 15 then y = 15;
+   //if y then y = 15 else y = 17;
+   if y < 15 then y = 15;
+   y = -y;
+   y = ?5;
+   if y == 15 and x == 15 then y++;
+   
+   x = *arr;
+   
+   lost = false;
+   
+   while ( lost == false ) do {
+      int u = 1;
+      for i = 10 do {
+         break;
+      }
+   }
+   
+   return;
+   
+}
+
+bool isNumGreater ( int y; int x;; ) {
+   if ( y > x ) then {
+      int i:10;
+      return True;
+   } else {
+      int i;
+      i = 10;
+      return False;
+   }
+}
