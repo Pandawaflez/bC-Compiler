@@ -1,0 +1,99 @@
+Welcome gust1185
+Attempting to submit your code directory
+Compiling
+/bin/rm *~ parser.tab.o lex.yy.o treeUtils.o symbolTable.o semantics.o codegen.o emitcode.o  bC lex.yy.c parser.tab.h parser.tab.c parser.tar parser.output
+bison -v -t -d parser.y  
+g++  -O3       -c -o parser.tab.o parser.tab.c
+Targeted Testing: /y/shared/Engineering/cs-drbc/cs445/bC_in_5/*.bC
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test00.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test00.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test01Compound.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test01Compound.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Boolean.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Boolean.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Char.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Char.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Integer.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test03ConstantK_Integer.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test07IdK_noArray_noChild0.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test07IdK_noArray_noChild0.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test07OpK0.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test07OpK0.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_NonArray.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_NonArray.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_ADDASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_ADDASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_DEC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_DEC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_DIVASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_DIVASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_EQ_lhsNotArray.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_EQ_lhsNotArray.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_INC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_INC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_MULASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_MULASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_rhs_GLOBAL_ASSIGN.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_rhs_GLOBAL_ASSIGN.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_rhs_LOCALSTATIC_ASSIGN.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_rhs_LOCALSTATIC_ASSIGN.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_SUBASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_notSQ_SUBASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_GLOBAL_INC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_GLOBAL_INC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCAL_DEC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCAL_DEC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCAL_INC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCAL_INC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCALSTATIC_INC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_LOCALSTATIC_INC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_PARAMETER_INC.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_lhs_PARAMETER_INC.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_ADDASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_ADDASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_DIVASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_DIVASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_MULASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_MULASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_SUBASS.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0AssignK_SQ_rhs_SUBASS.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0BreakK.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0BreakK.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0Call.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0Call.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0CallParams.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0CallParams.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0CallParamsMulti.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0CallParamsMulti.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ForK_Increment.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ForK_Increment.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ForK_No_Increment.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ForK_No_Increment.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IdK_isArray_notParameter.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IdK_isArray_notParameter.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IdK_isArray_parameter.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IdK_isArray_parameter.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IfK.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IfK.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IfK_Else.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0IfK_Else.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_ArrayIndex.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_ArrayIndex.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_BooleanBinaryOperators.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_BooleanBinaryOperators.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_IntegerBinaryOperators.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_IntegerBinaryOperators.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_IntegerBinaryOperators_MIN_MAX.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_IntegerBinaryOperators_MIN_MAX.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_Not.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_Not.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_Random.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_Random.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_SizeOf.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_SizeOf.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_UnaryNeg.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0OpK_UnaryNeg.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ReturnK.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ReturnK.bC)
+Failed: 
+diff -y <(./bC /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ReturnK_NoChild0.bC) <(/y/shared/Engineering/cs-drbc/cs445/bC 5  /y/shared/Engineering/cs-drbc/cs445/bC_in_5/test0ReturnK_NoChild0.bC)
